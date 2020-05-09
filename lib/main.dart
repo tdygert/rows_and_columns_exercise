@@ -57,6 +57,7 @@ class MyApp extends StatelessWidget {
                                   height: 50,
                                   width: 50,
                                   color: Colors.red,
+                                  child: Image.asset('images/tim.jpg'),
                                 ),
                                 Container(
                                   height: 50,
