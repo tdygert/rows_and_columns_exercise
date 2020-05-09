@@ -24,47 +24,56 @@ class MyApp extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 // height: 60,
-                child: DecoratedBox(
-                    decoration: BoxDecoration(color: Colors.blueGrey),
-                    child: Column(
-                      children: <Widget>[
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Container(
-                              child: Center(
-                                child: Text(
-                                  'first row of boxes',
-                                  style: TextStyle(
-                                      fontSize: 16, color: Colors.white),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: DecoratedBox(
+                      decoration: BoxDecoration(
+                          border: Border.all(width: 5, color: Colors.orange),
+                          color: Colors.black),
+                      child: Column(
+                        children: <Widget>[
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.all(6),
+                                child: Center(
+                                  child: Text(
+                                    'first row of boxes',
+                                    style: TextStyle(
+                                        fontSize: 16, color: Colors.white),
+                                  ),
                                 ),
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: <Widget>[
-                            Container(
-                              margin: EdgeInsets.all(10),
-                              height: 50,
-                              width: 50,
-                              color: Colors.blue,
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                Container(
+                                  //  margin: EdgeInsets.all(10),
+                                  height: 50,
+                                  width: 50,
+                                  color: Colors.blue,
+                                ),
+                                Container(
+                                  height: 50,
+                                  width: 50,
+                                  color: Colors.white,
+                                ),
+                                Container(
+                                  height: 50,
+                                  width: 50,
+                                  color: Colors.green,
+                                ),
+                              ],
                             ),
-                            Container(
-                              height: 50,
-                              width: 50,
-                              color: Colors.white,
-                            ),
-                            Container(
-                              height: 50,
-                              width: 50,
-                              color: Colors.green,
-                            ),
-                          ],
-                        ),
-                      ],
-                    )),
+                          ),
+                        ],
+                      )),
+                ),
               ),
               SizedBox(
                 width: double.infinity,
