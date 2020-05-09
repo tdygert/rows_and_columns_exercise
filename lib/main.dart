@@ -28,8 +28,8 @@ class MyApp extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: DecoratedBox(
                       decoration: BoxDecoration(
-                          border: Border.all(width: 5, color: Colors.orange),
-                          color: Colors.black),
+                        border: Border.all(width: 5, color: Colors.orange),
+                      ),
                       child: Column(
                         children: <Widget>[
                           Row(
@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
                                   //  margin: EdgeInsets.all(10),
                                   height: 50,
                                   width: 50,
-                                  color: Colors.blue,
+                                  color: Colors.red,
                                 ),
                                 Container(
                                   height: 50,
