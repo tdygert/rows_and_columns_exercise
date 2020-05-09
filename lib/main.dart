@@ -1,3 +1,5 @@
+// I had image working but now it does not work.  "unable to get stastus of file:
+
 //import 'package:flutter/cupertino.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
