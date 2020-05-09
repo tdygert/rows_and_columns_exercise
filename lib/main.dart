@@ -1,3 +1,4 @@
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -18,125 +19,130 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    child: Text(
-                      'row 1 text',
-                    ),
-                  )
-                ],
+              SizedBox(
+                width: double.infinity,
+                // height: 60,
+                child: DecoratedBox(
+                    decoration: BoxDecoration(color: Colors.blueGrey),
+                    child: Column(
+                      children: <Widget>[
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Container(
+                              child: Center(
+                                child: Text(
+                                  'first row of boxes',
+                                  style: TextStyle(
+                                      fontSize: 16, color: Colors.white),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: <Widget>[
+                            Container(
+                              margin: EdgeInsets.all(10),
+                              height: 50,
+                              width: 50,
+                              color: Colors.blue,
+                            ),
+                            Container(
+                              height: 50,
+                              width: 50,
+                              color: Colors.white,
+                            ),
+                            Container(
+                              height: 50,
+                              width: 50,
+                              color: Colors.green,
+                            ),
+                          ],
+                        ),
+                      ],
+                    )),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Container(
-                    color: Colors.red,
-                    height: 50,
-                    width: 50,
-                    child: Center(
-                      child: Text(
-                        '1',
-                        style: TextStyle(fontSize: 30),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    color: Colors.orange,
-                    height: 50,
-                    width: 50,
-                    child: Center(
-                      child: Text(
-                        '2',
-                        style: TextStyle(fontSize: 30),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    color: Colors.purpleAccent,
-                    height: 50,
-                    width: 50,
-                    child: Center(
-                      child: Text(
-                        '3',
-                        style: TextStyle(fontSize: 30),
-                      ),
-                    ),
-                  )
-                ],
+              SizedBox(
+                width: double.infinity,
+                height: 60,
+                child: DecoratedBox(
+                    decoration: BoxDecoration(color: Colors.red),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.blue,
+                        ),
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.white,
+                        ),
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.green,
+                        ),
+                      ],
+                    )),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Container(
-                    color: Colors.red,
-                    height: 50,
-                    width: 50,
-                  ),
-                  Container(
-                    color: Colors.orange,
-                    height: 50,
-                    width: 50,
-                  ),
-                  Container(
-                    color: Colors.purpleAccent,
-                    height: 50,
-                    width: 50,
-                  )
-                ],
+              SizedBox(
+                width: double.infinity,
+                height: 60,
+                child: DecoratedBox(
+                    decoration: BoxDecoration(color: Colors.red),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.blue,
+                        ),
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.white,
+                        ),
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.green,
+                        ),
+                      ],
+                    )),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Container(
-                    color: Colors.red,
-                    height: 50,
-                    width: 50,
-                  ),
-                  Container(
-                    color: Colors.orange,
-                    height: 50,
-                    width: 50,
-                  ),
-                  Container(
-                    color: Colors.purpleAccent,
-                    height: 50,
-                    width: 50,
-                  )
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Container(
-                    color: Colors.red,
-                    height: 50,
-                    width: 50,
-                  ),
-                  Container(
-                    color: Colors.orange,
-                    height: 50,
-                    width: 50,
-                  ),
-                  Container(
-                    color: Colors.purpleAccent,
-                    height: 50,
-                    width: 50,
-                  )
-                ],
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.black,
-              ),
-              Container(
-                height: 30,
-                width: 200,
-                color: Colors.yellow,
+              SizedBox(
+                width: double.infinity,
+                height: 60,
+                child: DecoratedBox(
+                    decoration: BoxDecoration(color: Colors.red),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.blue,
+                        ),
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.white,
+                        ),
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.green,
+                        ),
+                      ],
+                    )),
               ),
             ],
           ),
