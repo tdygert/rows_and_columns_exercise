@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           title: Text('Rows and Columns Exercise'),
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
