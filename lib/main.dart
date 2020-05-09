@@ -16,138 +16,130 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           title: Text('Rows and Columns Exercise'),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Container(
-                  color: Colors.red,
-                  height: 50,
-                  width: 50,
-                  child: Center(
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
                     child: Text(
-                      '1',
-                      style: TextStyle(fontSize: 30),
+                      'row 1 text',
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 50,
+                    child: Center(
+                      child: Text(
+                        '1',
+                        style: TextStyle(fontSize: 30),
+                      ),
                     ),
                   ),
-                ),
-                Container(
-                  color: Colors.orange,
-                  height: 50,
-                  width: 50,
-                  child: Center(
-                    child: Text(
-                      '2',
-                      style: TextStyle(fontSize: 30),
+                  Container(
+                    color: Colors.orange,
+                    height: 50,
+                    width: 50,
+                    child: Center(
+                      child: Text(
+                        '2',
+                        style: TextStyle(fontSize: 30),
+                      ),
                     ),
                   ),
-                ),
-                Container(
-                  color: Colors.purpleAccent,
-                  height: 50,
-                  width: 50,
-                  child: Center(
-                    child: Text(
-                      '3',
-                      style: TextStyle(fontSize: 30),
+                  Container(
+                    color: Colors.purpleAccent,
+                    height: 50,
+                    width: 50,
+                    child: Center(
+                      child: Text(
+                        '3',
+                        style: TextStyle(fontSize: 30),
+                      ),
                     ),
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 50,
                   ),
-                )
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Container(
-                  color: Colors.red,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.orange,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.purpleAccent,
-                  height: 50,
-                  width: 50,
-                )
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Container(
-                  color: Colors.red,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.orange,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.purpleAccent,
-                  height: 50,
-                  width: 50,
-                )
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Container(
-                  color: Colors.red,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.orange,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.purpleAccent,
-                  height: 50,
-                  width: 50,
-                )
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Container(
-                  color: Colors.red,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.orange,
-                  height: 50,
-                  width: 50,
-                ),
-                Container(
-                  color: Colors.purpleAccent,
-                  height: 50,
-                  width: 50,
-                )
-              ],
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.black,
-            ),
-            Container(
-              height: 30,
-              width: 200,
-              color: Colors.yellow,
-            ),
-          ],
+                  Container(
+                    color: Colors.orange,
+                    height: 50,
+                    width: 50,
+                  ),
+                  Container(
+                    color: Colors.purpleAccent,
+                    height: 50,
+                    width: 50,
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 50,
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    height: 50,
+                    width: 50,
+                  ),
+                  Container(
+                    color: Colors.purpleAccent,
+                    height: 50,
+                    width: 50,
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Container(
+                    color: Colors.red,
+                    height: 50,
+                    width: 50,
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    height: 50,
+                    width: 50,
+                  ),
+                  Container(
+                    color: Colors.purpleAccent,
+                    height: 50,
+                    width: 50,
+                  )
+                ],
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.black,
+              ),
+              Container(
+                height: 30,
+                width: 200,
+                color: Colors.yellow,
+              ),
+            ],
+          ),
         ),
       ),
     );
