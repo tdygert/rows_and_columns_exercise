@@ -56,19 +56,24 @@ class MyApp extends StatelessWidget {
                               children: <Widget>[
                                 Container(
                                   //  margin: EdgeInsets.all(10),
-                                  height: 50,
-                                  width: 50,
+                                  height: 75,
+                                  width: 75,
                                   color: Colors.red,
-                                  child: Image.asset('images/tim.jpg'),
+                                  child: Image.asset(
+                                    'images/tim.jpg',
+                                  ),
                                 ),
                                 Container(
-                                  height: 50,
-                                  width: 50,
+                                  height: 75,
+                                  width: 75,
                                   color: Colors.white,
+                                  child: Image.asset(
+                                    'images/tim.jpg',
+                                  ),
                                 ),
                                 Container(
-                                  height: 50,
-                                  width: 50,
+                                  height: 75,
+                                  width: 75,
                                   color: Colors.green,
                                 ),
                               ],
