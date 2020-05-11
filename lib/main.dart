@@ -4,10 +4,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+  var pRadius = 50.0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -41,9 +44,9 @@ class MyApp extends StatelessWidget {
                                 padding: EdgeInsets.all(6),
                                 child: Center(
                                   child: Text(
-                                    'first row of boxes',
+                                    'Kati and Tim',
                                     style: TextStyle(
-                                        fontSize: 16, color: Colors.white),
+                                        fontSize: 20, color: Colors.white),
                                   ),
                                 ),
                               )
@@ -55,26 +58,20 @@ class MyApp extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: <Widget>[
                                 Container(
-                                  //  margin: EdgeInsets.all(10),
-                                  height: 75,
-                                  width: 75,
-                                  color: Colors.red,
-                                  child: Image.asset(
-                                    'images/tim.jpg',
+                                  child: CircleAvatar(
+                                    radius: pRadius,
+                                    backgroundImage: AssetImage(
+                                      'images/tim.jpg',
+                                    ),
                                   ),
                                 ),
                                 Container(
-                                  height: 75,
-                                  width: 75,
-                                  color: Colors.white,
-                                  child: Image.asset(
-                                    'images/tim.jpg',
+                                  child: CircleAvatar(
+                                    radius: 50,
+                                    backgroundImage: AssetImage(
+                                      'images/tim.jpg',
+                                    ),
                                   ),
-                                ),
-                                Container(
-                                  height: 75,
-                                  width: 75,
-                                  color: Colors.green,
                                 ),
                               ],
                             ),
